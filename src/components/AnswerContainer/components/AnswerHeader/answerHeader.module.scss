@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1vw;
+    border: 2px solid #000;
+    padding: 1vw;
+    font-weight: 600;
+    div {
+        width: 15%;
+        white-space: nowrap;
+    }
+}
