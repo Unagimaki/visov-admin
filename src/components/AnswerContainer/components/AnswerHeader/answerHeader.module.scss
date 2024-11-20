@@ -7,9 +7,11 @@
     padding: 1vw;
     font-weight: 600;
     div {
-        text-align: center;
         width: 15%;
         white-space: nowrap;
         font-size: min(1.5vw, 28.8px);
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
