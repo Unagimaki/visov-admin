@@ -19,7 +19,7 @@
         text-align: center;
         white-space: nowrap;
         overflow: auto;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
     }
 }
 
@@ -27,6 +27,7 @@
 
     /* Стили для экранов шириной менее 430px */
     .container {
+        height: 5vw;
         div {
             font-size: min(1.63vw, 7px);
         }
