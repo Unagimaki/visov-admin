@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { actionRemoveAnswer } from '../../../../state/reducers/answerReducer/actions';
 import { remove } from "firebase/database";
 
-export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'Отсутствует', tgUsername = 'Отсутствует'}) => {
+export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'Нет', tgUsername = 'Нет'}) => {
     const dispatch = useDispatch()
 
 
