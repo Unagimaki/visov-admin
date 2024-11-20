@@ -5,12 +5,32 @@
     gap: 1vw;
     border: min(0.05vw, 1px) solid #000;
     padding: 1vw;
+    button {
+        width: 3vw;
+        height: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     div {
-        width: 15%;
+        width: min-content;
+        min-width: 15%;
         font-size: min(1vw, 19.2px);
         text-align: center;
         white-space: nowrap;
-        overflow: hidden;
+        overflow: auto;
         text-overflow: ellipsis;
     }
+}
+
+@media screen and (max-width: 430px) {
+
+    /* Стили для экранов шириной менее 430px */
+    .container {
+        div {
+            font-size: min(1.63vw, 7px);
+        }
+        /* Размер шрифта адаптируется */
+    }
+
 }
