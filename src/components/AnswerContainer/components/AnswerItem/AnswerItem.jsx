@@ -9,19 +9,14 @@ export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'О
     const dispatch = useDispatch()
 
 
-const writeData = async (tgId) => {
-    try {
-        // Удаляем данные по указанному пути
-        await remove(ref(database, `/answers/${tgId}/scientist`))
-        .then(() => dispatch(actionRemoveAnswer(tgId)))
-    } catch (error) {
-        console.error("Ошибка удаления данных:", error);
-    }
-};
-
-    const removeName = (tgId) => {        
-        dispatch(actionRemoveAnswer(tgId))
-    }
+    const writeData = async (tgId) => {
+        try {
+            await remove(ref(database, `/answers/${tgId}/scientist`))
+            .then(() => dispatch(actionRemoveAnswer(tgId)))
+        } catch (error) {
+            console.error("Ошибка удаления данных:", error);
+        }
+    };
 
     return(
         <div className={styles.container}>
