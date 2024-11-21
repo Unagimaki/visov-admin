@@ -1,4 +1,4 @@
-import { REMOVE_ANSWER, SET_ANSWERS } from "./types"
+import { CHANGE_ANSWER, REMOVE_ANSWER, SET_ANSWERS } from "./types"
 
 export const actionSetAnswers = (arr) => {
     return {
@@ -14,5 +14,15 @@ export const actionRemoveAnswer = (id) => {
         type: REMOVE_ANSWER,
         payload: id
         
+    }
+}
+export const actionChangeAnswer = (id, text) => {
+    console.log(text);
+    
+    return {
+        type: CHANGE_ANSWER,
+        payload: {
+            id, text
+        }
     }
 }
