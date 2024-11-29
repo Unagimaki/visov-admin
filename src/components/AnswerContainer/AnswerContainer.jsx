@@ -18,7 +18,8 @@ export const AnswerContainer = () => {
                         organization={item.organization}
                         scientist={item.scientist}
                         tgId={item.id}
-                        tgUsername={item.tgUsername}
+                        username={item.username}
+                        date={item.createdAt}
                         key={index}
                     />
                 })
