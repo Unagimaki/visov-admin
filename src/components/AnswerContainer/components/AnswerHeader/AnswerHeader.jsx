@@ -9,6 +9,7 @@ export const AnswerHeader = () => {
             <div>Ответ</div>
             <div>tgId</div>
             <div>tgUsername</div>
+            <div>Дата и время</div>
         </div>
     )
 }
