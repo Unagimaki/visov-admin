@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { actionChangeAnswer, actionRemoveAnswer } from '../../../../state/reducers/answerReducer/actions';
 import { remove } from "firebase/database";
 
-export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'Нет', tgUsername = 'Нет'}) => {
+export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'Нет', username = 'Нет', date = 'Нет'}) => {
     const dispatch = useDispatch()
 
 
@@ -40,7 +40,8 @@ export const AnswerItem = ({email, fullname, organization, scientist, tgId = 'Н
             <div>{organization}</div>
             <div className={styles.container_item} onClick={changeAnswer}>{scientist}</div>
             <div>{tgId}</div>
-            <div>{tgUsername}</div>
+            <div>{username}</div>
+            <div>{date}</div>
             <button onClick={() => writeData(tgId)}>
                 &times;
             </button>
